@@ -1,0 +1,17 @@
+<section>
+    <h5>Login Component</h5>
+    <!-- in Angular every form is an NgForm automatically -->
+    <!-- NgForms do NOT auto-submit -->
+    <form> 
+        <!-- form fields default to type='text' -->
+        <input placeholder="username" name='user' id='username'
+            [(ngModel)]='user' />
+        <!-- [()] is two-way binding (in and out) -->
+        <input placeholder="password" name='pass' id='password' 
+            [(ngModel)]='pass'/>
+        <button (click)='handleBtnGo()' id='btnGo'>Go</button>
+    </form>
+    <p>Current values are: {{user}} {{pass}}</p>
+
+
+</section>

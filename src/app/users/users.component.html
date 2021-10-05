@@ -1,0 +1,8 @@
+<section>
+    <h5>Here we receive new users and add them to an array</h5>
+    <h6 *ngFor='let user of usersArr'>{{user.u}} {{user.p}}</h6>
+    <hr/>
+    <p>for debugging: {{newUser |json}}</p>
+    <p>Current Users Array is {{usersArr |json}}</p>
+    <p>Changes received: {{ch |json}}</p>
+</section>
